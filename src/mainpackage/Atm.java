@@ -7,7 +7,7 @@ public class Atm {
     private int pin = 1234;
 
     public void start() {
-        System.out.println("Welcome to the ATM!");
+        System.out.println("welcome to atm machine !");
         checkPin();
     }
 
@@ -45,7 +45,7 @@ public class Atm {
                 depositMoney();
                 break;
             case 4:
-                System.out.println("Thank you for using the ATM. Goodbye!");
+                System.out.println("THANKS. Goodbye!");
                 return;
             default:
                 System.out.println("Invalid choice. Please try again.");
