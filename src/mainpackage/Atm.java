@@ -1,4 +1,4 @@
-package mainpackage;
+
 
 import java.util.Scanner;
 public class Atm {
