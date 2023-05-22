@@ -1,0 +1,20 @@
+<project>
+<target name="compile">
+<mkdir dir="build/classes"/>
+<javac srcdir="src/mainpackage" destdir="build/classes"/>
+
+</target>
+<target name="jar">
+<jar destfile="build/Main.jar" basedir="build/classes">
+<manifest>
+<attribute name="Main-class" value="mainpackage.AtmMachine"/>
+
+</manifest>
+</jar>
+</target>
+
+<target name="run">
+<java jar="build/Main.jar"  fork="true"/>
+</target>
+
+</project>
